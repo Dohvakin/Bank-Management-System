@@ -117,8 +117,7 @@ DefaultTableModel tm=(DefaultTableModel)ShowTBL.getModel();
         try {
             
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=(Connection)
-            DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("select * from Bank_Table");
             int rows=tm.getRowCount();

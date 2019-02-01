@@ -55,8 +55,7 @@ String pwd="MyNewPass";
                 }
             }
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=(Connection)
-            DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery(qry);
             while (rs.next()) {                
@@ -94,8 +93,7 @@ String pwd="MyNewPass";
         {
             
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con=(Connection)
-            DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("select * from Bank_Table");
             
@@ -411,8 +409,7 @@ String Acc=AccNoTF.getText();
         try {
             
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=(Connection)
-            DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
             Statement stmt=con.createStatement();
             ResultSet bal=stmt.executeQuery("select * from Bank_Table where Account_no='"+(Acc)+"'");
             String amount="";           

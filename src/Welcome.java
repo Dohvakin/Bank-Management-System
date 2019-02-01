@@ -41,8 +41,6 @@ public class Welcome extends javax.swing.JFrame {
 
         jLayeredPane2 = new javax.swing.JLayeredPane();
         Continue = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -68,20 +66,9 @@ public class Welcome extends javax.swing.JFrame {
         jLayeredPane2.add(Continue);
         Continue.setBounds(550, 450, 90, 20);
 
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Corbel", 0, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Created By:");
-        jLayeredPane2.add(jLabel2);
-        jLabel2.setBounds(10, 370, 160, 40);
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Picture1.png"))); // NOI18N
-        jLayeredPane2.add(jLabel3);
-        jLabel3.setBounds(10, 380, 120, 30);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Welcome.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Wlcm.png"))); // NOI18N
         jLayeredPane2.add(jLabel1);
-        jLabel1.setBounds(0, 0, 660, 500);
+        jLabel1.setBounds(-180, -120, 840, 620);
 
         getContentPane().add(jLayeredPane2);
         jLayeredPane2.setBounds(0, -10, 670, 500);
@@ -149,8 +136,6 @@ this.setVisible(false);
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Continue;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLayeredPane jLayeredPane2;
     // End of variables declaration//GEN-END:variables
 }

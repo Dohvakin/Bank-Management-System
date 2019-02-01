@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
  * @author Compaq
  */
 public class Table_Creation extends javax.swing.JFrame {
-String pwd="yash";
+String pwd="MyNewPass";
     /**
      * Creates new form Table_Creation
      */
@@ -70,8 +70,7 @@ long Account=102581800;
         try {            
             
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con =(Connection)
-            DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
+            Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
             Statement stmt=con.createStatement();
             int Bank_Table=stmt.executeUpdate("create table Bank_Table"
                     + "(Account_no varchar(20) primary key,"

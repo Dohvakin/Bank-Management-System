@@ -47,8 +47,7 @@ String Acc="";
         try {
             
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con=(Connection)
-            DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
             Statement stmt=con.createStatement();
             ResultSet rs=stmt.executeQuery("Select * from Accno");
             while (rs.next()) {                
@@ -343,8 +342,7 @@ int a=0,a1=0;
         try {
                     
         Class.forName("com.mysql.jdbc.Driver");
-        Connection con=(Connection)
-        DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
+        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/bank","root",pwd);
         Statement stmt=con.createStatement();
                 
         if (CurrentRB.isSelected())     
