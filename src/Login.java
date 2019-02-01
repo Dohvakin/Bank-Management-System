@@ -123,7 +123,7 @@ if ("xyz".equals(Username)&&"xxyyzz".equals(Password))
 new Bank_management_system().setVisible(true);
 this.setVisible(false);
 
-} else if (!"yash".equals(Username)||!"12".equals(Password)) {
+} else if (!"xyz".equals(Username)||!"xxyyzz".equals(Password)) {
 log++;
 }
 if (log==2) {
