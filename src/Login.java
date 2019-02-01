@@ -118,7 +118,7 @@ public int log=0;
 private int login(){
 String Username = NameTF.getText().trim();
 String Password = new String(PassPF.getPassword()).trim();
-if ("yash".equals(Username)&&"12".equals(Password)) 
+if ("xyz".equals(Username)&&"xxyyzz".equals(Password)) 
 {
 new Bank_management_system().setVisible(true);
 this.setVisible(false);
